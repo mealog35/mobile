@@ -1,0 +1,54 @@
+@charset "utf-8";
+#wrap{
+    background: #000;
+}
+header{
+/*    위치깆준값*/
+    position: relative;
+}
+.header{
+    height: 60px;
+}
+/*버튼*/
+aside {
+/*    포지션*/
+    position: absolute;
+    right: 0;
+    top:14px;
+    padding-right: 10px;
+}
+aside .ticket{
+    font-family: 'Lato',sans-serif;
+}
+aside .ticket button{
+    width: 114px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #aa7c1e;
+    font-size: 14px;
+}
+/*유투브*/
+#content .youtube{
+    padding: 0 10px;
+/*    transform: */
+}
+#content .youtube iframe{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+input[id="menuicon"]+label {
+	background: none;
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+.roboto{font-family: 'Roboto', sans-serif;
+   
+}
+.montserrat{font-family: 'Montserrat', sans-serif;
+}
+.opensans{font-family: 'Open Sans', sans-serif;
+}
+.andika{font-family: 'Andika New Basic', sans-serif;
+}
+.notosansjp{font-family: 'Noto Sans JP', sans-serif;
+}
+.lato{font-family: 'Lato', sans-serif;
+}
+.sourcesanspro{font-family: 'Source Sans Pro', sans-serif;
+}
+.poppins{font-family: 'Poppins', sans-serif;
+}
+.ubuntu{font-family: 'Ubuntu', sans-serif;
+}
+.merriweather{font-family: 'Merriweather', serif;
+}
+.firasans{font-family: 'Fira Sans', sans-serif;
+}
+.notosanstc{font-family: 'Noto Sans TC', sans-serif;
+}
+.titilliumweb{font-family: 'Titillium Web', sans-serif;
+}
+.mukta{font-family: 'Mukta', sans-serif;
+}
+.barlow{font-family: 'Barlow', sans-serif;
+}
+.teko{font-family: 'Teko', sans-serif;
+}
+.crimsontext{font-family: 'Crimson Text', serif;
+}
+.oswald{font-family: 'Oswald', sans-serif;
+}
+.robotocondensed{font-family: 'Roboto Condensed', sans-serif;
+}
+.spacegrotesk{font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.notosanskr{font-family: 'Noto Sans KR', sans-serif;
+}
+.nanumgothic{font-family: 'Nanum Gothic', sans-serif;
+}
+.nanummyeongjo{font-family: 'Nanum Myeongjo', serif;
+}
+.nanumpen{font-family: 'Nanum Pen Script', cursive;
+}
+.yeonsung{font-family: 'Yeon Sung', cursive;
+}
+.gothica1{font-family: 'Gothic A1', sans-serif;
+}
+.nanumgothiccoding{font-family: 'Nanum Gothic Coding', monospace;
+}
+.notoserifkr{font-family: 'Noto Serif KR', serif;
+}
+.stylish{font-family: 'Stylish', sans-serif;
+}
+.sunflower{font-family: 'Sunflower', sans-serif;
+}
+
+
+
+
+
+

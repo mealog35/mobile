@@ -1,0 +1,208 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Noto sans',sans-serif;
+    
+}
+/*스크롤 기능이 되면서 스크롤 뷰 안보이게 하기 = 웹킷브라우저*/
+body::-webkit-scrollbar {
+	display: none;
+}
+/*스크롤 기능이 되면서 스크롤 뷰 안보이게 하기 = IE 모던브라우저 / 파이어폭스 구동 X */
+html, body {
+	-ms-overflow-style: none;
+}
+
+#wrap {
+	width: 100%;
+	/*위치 기준값*/
+	position: relative;
+}
+/*배경이미지 삽입*/
+#wrap {
+	background: url('../images/poster_mobile1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+    
+}
+/*1.헤더영역*/
+.header {
+	padding: 24px;
+}
+.header .mobile_gnb {
+	padding: 46px 0 0 0;
+	font-family: 'Lato',sans-serif;
+	font-size: 0.8rem;
+}
+.header .mobile_gnb .gnb>li {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 24px;
+}
+.header .mobile_gnb .gnb>li:hover {
+	background: #000;
+}
+.header .mobile_gnb .gnb>li>a {
+	display: block;
+	color: #fff;
+}
+.header .mobile_gnb .gnb>li>a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+/*SNS 영역*/
+.mobile_gnb .sns {
+	display: table;
+	width: 234px;
+	padding-left: 24px;
+}
+.mobile_gnb .sns li {
+	display: table-cell;
+	width: 70px;
+}
+.mobile_gnb .sns li a {
+	display: table-cell;
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	padding-top: 11px;
+}
+.mobile_gnb .sns .facebook {
+	background-color: #d2af64;
+}
+.mobile_gnb .sns .facebook:hover {
+	background-color: #2b4b8e;
+}
+.mobile_gnb .sns .twitter {
+	background-color: #d2af64;
+}
+.mobile_gnb .sns .twitter:hover {
+	background-color: #2898f0;
+}
+.mobile_gnb .sns .insta {
+	background-color: #d2af64;
+}
+.mobile_gnb .sns .insta:hover {
+	background-color: #2eb116;
+}
+.mobile_gnb .sns i {
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/*버튼*/
+section .button {
+	width: 290px;
+	height: 40px;
+	/*포지션*/
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    bottom: 50px;
+    
+}
+section .button button {
+    background: #aa7d1f;
+	width: 290px;
+	height: 48px;
+	font-size: 0.875rem;
+	border: none;
+    cursor: pointer;
+}
+/*3.푸터영역*/
+footer{
+    background: #000;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    
+}
+footer p{
+    margin-bottom: 56px;
+}
+footer .copyright{
+    padding-bottom: 24px;
+}
+footer .copyright p{
+    margin-bottom: 24px;
+}
+footer .copyright a{
+    color: #4c4c4c;
+    font-size: 0.75rem;
+}
+/*=========햄벅거 메누동작CSS=========*/
+
+/*햄버거 메뉴 그리기*/
+input[id="menuicon"] {
+	/*로딩 시 안보이게 하기*/
+	display: none;
+}
+/*액자역할*/
+input[id="menuicon"]+label {
+	display: block;
+	width: 24px;
+	height: 14px;
+	cursor: pointer;
+	/*포지션 위치 기준값*/
+	position: relative;
+	z-index: 100;
+}
+/*1. 햄버거 메뉴만들기*/
+input[id="menuicon"]+label>span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	/*포지션*/
+	position: absolute;
+	z-index: 100;
+	transition: all 0.3s;
+}
+input[id="menuicon"]+label>span:nth-child(1){
+	top: 0px;
+}
+input[id="menuicon"]+label>span:nth-child(2){
+	top: 50%;
+	transform: translateY(-50%);
+}
+input[id="menuicon"]+label>span:nth-child(3){
+	bottom: 0;	
+}
+/*2. 클릭시 X버튼 효과 | checked 속성을 이용한 애니메이션 효과*/
+/*2-1. 가장 상단의 바를 가운데로 오게 한 후 \ 로 만들기*/
+input[id="menuicon"]:checked +label>span:nth-child(1) {
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+/*2-2. 가운데 바를 투명도로 안보이게 만들기*/
+input[id="menuicon"]:checked +label>span:nth-child(2) {
+	opacity: 0;
+}
+
+/*2-3. 가장 하단의 바를 가운데로 오게한 후 /로 만들기*/
+input[id="menuicon"]:checked +label>span:nth-child(3) {
+ 	bottom: 50%;
+	transform: translateY(50%) rotate(-45deg);
+}
+
+/*모바일 GNB*/
+.header nav[class="mobile_gnb"] {
+	width: 250px;
+	height: 100%;
+	background: #aa7d1f;
+	/*포지션*/
+	position: absolute;
+	left: -258px;
+	top: 0;
+	z-index: 10;
+	/*햄버거 바뀌는 초와 맞춰주기*/
+	transition: all 0.3s;
+}
+input[id="menuicon"]:checked+label +nav[class="mobile_gnb"] {
+	left: 0;
+}

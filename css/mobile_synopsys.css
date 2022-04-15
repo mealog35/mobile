@@ -1,0 +1,40 @@
+@charset "utf-8";
+#wrap{
+    background: none;
+}
+video{
+/*    포지션*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#content{
+    padding: 0 16px;
+    margin-bottom: 64px;
+}
+#content .content_1{
+    font-family: 'Lato',sans-serif;
+    font-size: 0.867rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    padding: 28px 60px;
+    background-color: rgba(0,0,0,0.5);
+}
+#content .content_1 img{
+    width: 100%;
+}
+#content .content_1 h3{
+    margin-bottom: 24px;
+}
+#content .content_1 p{
+    color: #aa7c1e;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#content .content_1 strong{
+    font-weight: 900;
+    text-shadow: 1px 1px #000;
+}

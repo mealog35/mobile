@@ -1,0 +1,192 @@
+@charset "UTF-8";
+#wrap {
+   width: 100%;
+   border: 0;
+}
+#wrap {
+   background: url('../images/poster_mobile1.png');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center center;
+}
+/*헤더영역*/
+.header{
+    height: 60px;
+}
+.header .banner{
+    position: fixed;
+    left: 56px;
+    top: 0;
+    z-index: 4;
+}
+.header .banner img{
+    width: 100%;
+}
+/*검색창*/
+#content form{
+    margin-top: 20px;
+    
+}
+#content .box{
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+}
+#content .box .container_1{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+/*    위치기준값*/
+    position: relative;
+}
+/*plasceholder 접두어*/
+#content .box .container_1 input#search::-webkit-input-placeholder{
+    color: #fff;
+}
+#content .box .container_1 input#search::-moz-input-placeholder{
+    color: #fff;
+}
+#content .box .container_1 input#search::-ms-input-placeholder{
+    color: #fff;
+}
+#content .box .container_1 .icon{
+    /*포지션*/
+    position: absolute;
+    top:50%;
+    z-index: 1;
+    margin-left: 17px;
+    margin-top: 17px;
+    color: #4f5b66;
+}
+/*검색창 호버효과*/
+#content .box .container_1 input#search{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    float: left;
+    padding-left: 45px;
+    transition: background .5s ease;
+}
+/*검색창 호버효과*/
+#content .box .container_1 input#search:hover,
+#content .box .container_1 input#search:focus,
+#content .box .container_1 input#search:active{
+    outline: none;
+    background: #2b303b;
+}
+/*프로모션 섹션*/
+#content .promotion{
+    margin-top: 16px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 0.875rem;
+    ;height: 1.5;
+    text-align: center;
+}
+#content .promotion p:last-child{
+    margin-top: 16px;
+}
+/*유투브 섹션*/
+#content .youtube{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+#content .youtube iframe{
+    width: 100%;
+}
+/*상영지역 섹션*/
+#content .area{
+    margin-top: 16px;
+    padding: 0 10px;
+}
+#content .area h3{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+#content .area p{
+    margin-top: 20px;
+}
+#content .area button{
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    padding: 14px 10px;
+    background: #f0ab6b;
+    border-radius: 4px;
+    margin: 0 4px 8px 0;
+    border: none;
+}
+/*fixed 햄버거메뉴*/
+input[id="menuicon"] {
+    /*로딩시 안보이게 하기*/
+    display: none;
+}
+/*액자역할*/
+input[id="menuicon"]+label {
+    display: block;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    /*포지션 위치기준*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 90;
+}
+input[id="menuicon"]+label span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    /*포지션*/
+    position: fixed;
+    z-index: 100;
+    transition: all .8s;
+}
+input[id="menuicon"]+label>span:nth-child(1){
+    top: 24px;
+    left:16px;
+}
+input[id="menuicon"]+label>span:nth-child(2){
+    left: 16px;
+    top: 30px;
+}
+input[id="menuicon"]+label>span:nth-child(3){
+    left: 16px;
+    top: 34px;
+}
+/*2. 클릭시 X버튼 효과 | checked속성을 이용한 애니메이션*/
+/*2-1. 가장 상단의 바를 가운데로 오게한후\로 만들기*/
+input[id="menuicon"]:checked +label span:nth-child(1){
+    top:34px;
+    transform:translateY(-50%) rotate(45deg);
+}
+/*2-1.가운데 바를 투명도록 안보이게 만들기*/
+input[id="menuicon"]:checked +label span:nth-child(2){
+    opacity: 0;
+}
+/*2-1.가운데 바를 투명도록 안보이게 만들기*/
+input[id="menuicon"]:checked +label span:nth-child(3){
+    top:34px;
+    transform:translateY(-50%) rotate(-45deg);
+}
+/*3.모바일 GNB*/
+.header nav[class="mobile_gnb"]{
+    width: 250px;
+    height: 100%;
+    background: #bc8c43;
+    /*포지션*/
+    position: fixed;
+    left: -260px;
+    top: 0;
+    z-index: 10;
+    transition:all .8s;
+}
+input[id="menuicon"]:checked + label +nav{
+    left: 0;
+}
